@@ -1,4 +1,4 @@
-
+Rayfield:Destroy()
 local function service(...) return game:GetService(...) end
 local Players = service("Players")
 local MarketplaceService = service("MarketplaceService")
