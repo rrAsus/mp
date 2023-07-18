@@ -16,15 +16,16 @@
 			end
 			
 			if game.CreatorId == 123247 or game.PlaceId == 370731277 and continuee == true then
-				local githublink = "https://raw.githubusercontent.com/rrAsus/mp/main/"
-				local loaderurl = githublink .. "mp.lua"
-				local uicheckurl = githublink .. "check.lua"
+				local githublinkme = "https://raw.githubusercontent.com/rrAsus/mp/main/"
+				local githublinkhim = "https://raw.githubusercontent.com/synolope/mpcity/main/"
+				local loaderurl = githublinkme .. "load.lua"
+				local uicheckurl = githublinkme .. "check.lua"
 				local scripturl = ""
 				if identifyexecutor() == "Fluxus" then
-					scripturl = githublink .. "mp.lua"
+					scripturl = githublinkhim .. "synapse.lua"
 				end
 				if identifyexecutor() == queue_on_teleport then
-					scripturl = githublink .. "mp.lua"
+					scripturl = githublinkhim .. "synapse.lua"
 				end
 				queueOnTeleport([[
 						wait(3)
@@ -34,4 +35,3 @@
 				loadstring(game:HttpGet(uicheckurl, true))()
 				loadstring(game:HttpGet(scripturl, true))()
 			end
-		end});
